@@ -220,7 +220,7 @@ class GooglePlayAPI(object):
                 ac2dmToken = params["auth"]
             elif "error" in params:
                 if "NeedsBrowser" in params["error"]:
-                    raise SecurityCheckError(params["error"])
+                    raise SecurityCheckError(params)
                 raise LoginError("server says: " + params["error"])
             else:
                 raise LoginError("Auth token not found.")
