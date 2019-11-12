@@ -5,7 +5,7 @@ from setuptools.command.build_py import build_py as _build
 import os.path
 import subprocess
 
-PROTOC_BIN = "/usr/bin/protoc"
+PROTOC_BIN = "protoc.exe"
 
 CURRENT_DIR = os.path.abspath( os.path.dirname( __file__ ) )
 
